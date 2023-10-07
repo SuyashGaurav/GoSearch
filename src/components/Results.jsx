@@ -9,12 +9,13 @@ export const Results = () => {
   const { getResults, results, isLoading, searchTerm} = useResultContext();
   const location = useLocation();  //gives url for /search, /imagesearch
 
-  useEffect(() => {
-    if (searchTerm !== '') {
-        getResults(`${location.pathname}?q=${searchTerm}&num=10`);
-    }
-  }, [searchTerm, location.pathname]);
-  
+  // useEffect(() => {
+  //   // if (searchTerm !== '') {
+  //       // getResults(`${location.pathname}?q=${searchTerm}&num=10`);
+  //     getResults(`${location.pathname}?q=suyashgaurav`)
+  //   // }
+  // }, [searchTerm, location.pathname]);
+  console.log(results);
 
   if(isLoading) return <Loading />
 
@@ -22,29 +23,30 @@ export const Results = () => {
 
   switch (location.pathname) {
     case '/search':
-      return (
-        <div className="sm:px-56 flex flex-wrap justify-between space-y-6">
-          {results?.results?.map(({ link, title }, index) => (
-            <div key={index} className="md:w-2/5 w-full">
-              <a href={link} target="_blank" rel="noreferrer">
-                <p className="text-sm">{link.length > 30 ? link.substring(0, 30) : link}</p>
-                <p className="text-lg hover:underline dark:text-blue-300 text-blue-700  ">{title}</p>
-              </a>
-            </div>
-          ))}
-        </div>
-      );
-    case '/images':
-      return (
-        <div className="flex flex-wrap justify-center items-center">
-          {results?.image_results?.map(({ image, link: { href, title } }, index) => (
-            <a href={href} target="_blank" key={index} rel="noreferrer" className="sm:p-3 p-5">
-              <img src={image?.src} alt={title} loading="lazy" />
-              <p className="sm:w-36 w-36 break-words text-sm mt-2">{title}</p>
-            </a>
-          ))}
-        </div>
-      );
+      if(results.length!==0  && results.data){  
+        return (
+          <div className="sm:px-56 flex flex-wrap gap-4 justify-between">
+            <ul>
+              {results.data.map((item, index) => (
+                <li key={index}>
+                  <div className="ml-4 rounded-lg border border-slate-700 p-4">
+                    <a href={item.url} target="_blank" rel="noopener noreferrer">
+                      <p className="text-sm dark:text-blue-300 text-blue-700">
+                        {item.url.substring(0, 50)}
+                      </p>
+                      <p className="text-lg hover:underline">{item.title}</p>
+                      <p className='text-sm text-justify'>{item.snippet}</p>
+                    </a>
+                  </div>
+                </li>
+              ))}
+            </ul>
+          </div>
+        );
+      }
+      else{
+        return "Error!!";
+      }
     default:
       return 'ERROR!!';
   }
