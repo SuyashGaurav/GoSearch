@@ -1,3 +1,32 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Styles for all links */
+.nav-link {
+    text-decoration: none; /* Remove default underline */
+    padding: 10px 20px; /* Add padding to the link */
+    color: #9a9595; /* Default text color */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Add a smooth transition effect */
+  
+    /* You can add more styles here as needed */
+  }
+  
+  
+  /* Add a hover effect */
+  .nav-link:hover {
+    background-color: #566cb3; /* Background color on hover */
+    color: #f7f7fb; /* Text color on hover */
+    border-radius: 10px;
+  }
+  
+  /* Add animation to the text */
+  .nav-text {
+    transition: transform 0.2s ease;
+  }
+  
+  /* Add a scale effect on hover for the text */
+  .nav-link:hover .nav-text {
+    transform: scale(1.1); /* Increase the size of the text on hover */
+  }
+  
