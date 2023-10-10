@@ -15,7 +15,7 @@ export const Links = () => (
             className="nav-link" 
             exact
           >
-            <span className='nav-text'>
+          <span className='nav-text'>
               {text}
             </span>
           </NavLink>

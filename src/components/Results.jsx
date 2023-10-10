@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
-import ReactPlayer from 'react-player';
 import { Loading } from './Loading';
 
 import { useResultContext } from '../contexts/ResultContextProvider'; 
@@ -17,7 +16,7 @@ export const Results = () => {
         // getResults(`${location.pathname}?q=suyashgaurav`)
       }
       if(location.pathname === '/imagesearch'){
-        getImgResults(`${location.pathname}?q=${searchTerm}&num=10`);
+        getImgResults(`${location.pathname}?q=${searchTerm}&num=15`);
         // getImgResults(`${location.pathname}?q=suyashgaurav`);
       }
     }

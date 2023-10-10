@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react';
-import { Navigate, useNavigate } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 import { useResultContext } from '../contexts/ResultContextProvider';
 import { Links } from './Links';
@@ -28,13 +28,16 @@ export const Search = () => {
       {text !== '' && (
         <button id="search-button" type="button" className="absolute top-1.5 right-4 text-2xl text-gray-500 " 
           onClick={() => {
-          setSearchTerm(text);
-          navigate('/search'); // Navigate to the "All" link
+            if(text !== ''){
+              setSearchTerm(text);
+              navigate('/search');// Navigate to the "All" link
+            }
         }}>
         🔎 
         </button>
       )}
-      <Links />
+      {text !== '' && <Links />}
+      {/* <Links /> */}
     </div>
   );
 }

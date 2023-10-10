@@ -15,7 +15,7 @@
   
   /* Add a hover effect */
   .nav-link:hover {
-    background-color: #566cb3; /* Background color on hover */
+    background-color: #5973ca; /* Background color on hover */
     color: #f7f7fb; /* Text color on hover */
     border-radius: 10px;
   }
