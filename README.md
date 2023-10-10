@@ -24,7 +24,7 @@ The project is deployed on Netlify and can be accessed live at [https://gosearch
   - For real-time web search results: [Real-Time Web Search API](https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-web-search/)
   - For image search results: [Google Search API](https://rapidapi.com/neoscrap-net/api/google-search72/)
 
-- Netlify: for hosting and enabling the deployment of this website, making it accessible to users worldwide.
+- **Netlify**: For hosting and enabling the deployment of this website, making it accessible to users worldwide.
 
 <img alt="image_search" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/10360464-fb76-49eb-b327-beb5decc5d4c" style="max-width: 50%;">
 
