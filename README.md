@@ -1,9 +1,8 @@
 # [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/)
 
-<div style="display: flex; justify-content: space-between;">
-    <img alt="gosearch" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/a2516663-347b-4403-8524-9e28cd6cf7c6" style="max-width: 49%;">
-    <img alt="image_search" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/10360464-fb76-49eb-b327-beb5decc5d4c" style="max-width: 49%;">
-</div>
+![gosearch](https://github.com/SuyashGaurav/GoSearch/assets/102952185/a2516663-347b-4403-8524-9e28cd6cf7c6)
+![image_search](https://github.com/SuyashGaurav/GoSearch/assets/102952185/10360464-fb76-49eb-b327-beb5decc5d4c)
+
 
 
 
