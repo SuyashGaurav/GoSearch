@@ -1,38 +1,14 @@
-# GoSearch - Google Search Clone
+# [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/)
 
-![🧿GoSearch](https://gosearch-suyash-gaurav.netlify.app/)
+![GoSearch](<img width="960" alt="gosearch" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/2c2d9155-c794-4ef4-a217-f04822d001b2">)
 
-GoSearch is a React web application that serves as a Google Search engine clone. It uses ReactJS and Tailwind CSS to fetch and display search and image results from the Google Search API via RapidAPI.
+![GoSearch Screenshot](<link to your project's screenshot or logo>)
 
-You can access the live demo of GoSearch [here](https://gosearch-suyash-gaurav.netlify.app/).
+## Project Description
+- GoSearch is a web application built using React.js and Tailwind CSS that serves as a clone of the Google search engine. It fetches search results and image results using the Google Search API via RapidAPI and displays them on the web page.
+- It allows users to search the web and view search results, just like they would on the real Google website.
 
-## Features
+- You can access the live demo of GoSearch [here](https://gosearch-suyash-gaurav.netlify.app/).
 
-- Perform Google searches and see the results.
-- View search results in a user-friendly interface.
-- Access image search results.
-
-## Table of Contents
-
-- [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
-
-## Getting Started
-
-These instructions will help you set up and run GoSearch on your local machine.
-
-### Prerequisites
-
-To run GoSearch locally, you need to have the following software installed:
-
-- Node.js (with npm)
-- Git (optional, for cloning the repository)
-
-### Installation
-
-1. Clone the repository (or download and unzip it):
-
+## Deployment
+The project is deployed on Netlify and can be accessed live at [https://gosearch-suyash-gaurav.netlify.app/](https://gosearch-suyash-gaurav.netlify.app/).
