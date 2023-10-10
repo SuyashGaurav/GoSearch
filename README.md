@@ -1,4 +1,4 @@
-# [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/){:target="_blank"}
+# [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/) {:target="_blank"}
 
 <div style="display: flex;">
     <img alt="gosearch" width="960" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/a2516663-347b-4403-8524-9e28cd6cf7c6" style="max-width: 50%;">
