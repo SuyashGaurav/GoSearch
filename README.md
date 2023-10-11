@@ -1,7 +1,7 @@
 # [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/)
 
 <div style="display: flex;">
-    <img alt="gosearch" width="960" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/a2516663-347b-4403-8524-9e28cd6cf7c6" style="max-width: 50%;">
+<img width="960" alt="gosearch" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/a77954a4-65c0-4a68-812f-e8f5eb06ce68">
 </div>
 
 ## Project Description
@@ -26,5 +26,5 @@ The project is deployed on Netlify and can be accessed live at [https://gosearch
 
 - **Netlify**: For hosting and enabling the deployment of this website, making it accessible to users worldwide.
 
-<img alt="image_search" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/10360464-fb76-49eb-b327-beb5decc5d4c" style="max-width: 50%;">
+<img width="960" alt="image_search" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/95d9032e-6f4e-4edf-b31a-10e06468f9ad">
 
