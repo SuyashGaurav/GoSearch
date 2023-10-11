@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+# [🧿GoSearch - Google Search Clone](https://gosearch-suyash-gaurav.netlify.app/)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div style="display: flex;">
+<img width="960" alt="gosearch" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/a77954a4-65c0-4a68-812f-e8f5eb06ce68">
+</div>
 
-## Available Scripts
+## Project Description
+- GoSearch is a web application built using React.js and Tailwind CSS that serves as a clone of the Google search engine. It fetches search results and image results using the Google Search API via RapidAPI and displays them on the web page.
+- It allows users to search the web and view search results, just like they would on the real Google website.
 
-In the project directory, you can run:
+- You can access the live demo of GoSearch [here](https://gosearch-suyash-gaurav.netlify.app/).
 
-### `npm start`
+## Deployment
+The project is deployed on Netlify and can be accessed live at [https://gosearch-suyash-gaurav.netlify.app/](https://gosearch-suyash-gaurav.netlify.app/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Features
+- Search the web using the Google Search API.
+- View and click on search results.
+- View image search results with clickable images.
+- **Light and Dark Mode:** Switch between light and dark themes for a personalized browsing experience.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Acknowledgments
+- This project utilizes the following APIs from RapidAPI:
+  - For real-time web search results: [Real-Time Web Search API](https://rapidapi.com/letscrape-6bRBa3QguO5/api/real-time-web-search/)
+  - For image search results: [Google Search API](https://rapidapi.com/neoscrap-net/api/google-search72/)
 
-### `npm test`
+- **Netlify**: For hosting and enabling the deployment of this website, making it accessible to users worldwide.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<img width="960" alt="image_search" src="https://github.com/SuyashGaurav/GoSearch/assets/102952185/95d9032e-6f4e-4edf-b31a-10e06468f9ad">
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
