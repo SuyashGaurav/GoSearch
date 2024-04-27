@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+html,body
+{
+    /* width: 100%; */
+    /* height: 100%; */
+    /* margin: 0px;
+    padding: 0px; */
+    overflow-x: hidden; 
+}
 /* Styles for all links */
 .nav-link {
     text-decoration: none; /* Remove default underline */
@@ -29,4 +37,3 @@
   .nav-link:hover .nav-text {
     transform: scale(1.1); /* Increase the size of the text on hover */
   }
-  
