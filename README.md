@@ -5,7 +5,7 @@
 </div>
 
 ## Project Description
-- GoSearch is a web application built using React.js and Tailwind CSS that serves as a clone of the Google search engine. It fetches search results and image results using the Google Search API via RapidAPI and displays them on the web page.
+- GoSearch is a web application built using React.js and Tailwind CSS that serves as a clone of the Google search engine. It fetches search results, image and video results using the Google Search API via RapidAPI and displays them on the web page.
 - It allows users to search the web and view search results, just like they would on the real Google website.
 
 - You can access the live demo of GoSearch [here](https://gosearch-suyash-gaurav.netlify.app/).
@@ -16,7 +16,7 @@ The project is deployed on Netlify and can be accessed live at [https://gosearch
 ## Features
 - Search the web using the Google Search API.
 - View and click on search results.
-- View image search results with clickable images.
+- View image and video search results with clickable images and videos.
 - **Light and Dark Mode:** Switch between light and dark themes for a personalized browsing experience.
 
 ## Acknowledgments
