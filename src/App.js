@@ -15,10 +15,8 @@ const App = () => {
             <Route exact path = '/' element={<search />}/>
             <Route exact path = '/search' element={<Results/>}/>
             <Route exact path = '/imagesearch' element={<Results/>}/>
-            {/* <Route exact path='/news' element={<Results/>}/>
-            <Route exact path='/videos' element={<Results/>}/> */}
+            <Route exact path = '/videosearch' element={<Results/>}/>
             </Routes>
-
           <Footer />
         </div>
     </div>

@@ -86,8 +86,40 @@ export const ResultContextProvider = ({ children }) => {
         setIsLoading(false);
     };
 
+    const getVidResults = async (searchItem) => {
+        setIsLoading(true);
+        const baseVidurl = 'https://google-api31.p.rapidapi.com/videosearch';
+        const options = {
+            method: 'POST',
+            headers: {
+                'content-type': 'application/json',
+                'X-RapidAPI-Key': 'bd59419163msh1af2c6dc0a77ec8p1ef622jsn07f661313985',
+                'X-RapidAPI-Host': 'google-api31.p.rapidapi.com'
+            },
+            body: JSON.stringify({
+                text: searchItem,
+                safesearch: 'off',
+                timelimit: '',
+                duration: '',
+                resolution: '',
+                region: 'wt-wt',
+                max_results: 50
+            })
+        };
+        try {
+            const response = await fetch(baseVidurl, options);
+            const data = await response.json();
+            console.log(data);
+            setResults(data);
+        } catch (error) {
+            console.error(error);
+        }
+        setIsLoading(false);
+    };
+
+
     return(
-        <ResultContext.Provider value={{ getResults, getImgResults, results, isLoading, searchTerm, setSearchTerm }}>
+        <ResultContext.Provider value={{ getResults, getImgResults, getVidResults, results, isLoading, searchTerm, setSearchTerm }}>
             {children}
         </ResultContext.Provider>
     );

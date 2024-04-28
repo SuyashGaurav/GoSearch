@@ -5,7 +5,7 @@ import { Loading } from './Loading';
 import { useResultContext } from '../contexts/ResultContextProvider'; 
 
 export const Results = () => {
-  const { getResults, getImgResults, results, isLoading, searchTerm} = useResultContext();
+  const { getResults, getImgResults, getVidResults, results, isLoading, searchTerm} = useResultContext();
   const location = useLocation();  //gives url for /search, /imagesearch
 
   useEffect(() => {
@@ -16,8 +16,11 @@ export const Results = () => {
         // getResults(`${location.pathname}?q=suyashgaurav`)
       }
       if(location.pathname === '/imagesearch'){
-        getImgResults(`${location.pathname}?q=${searchTerm}&num=15`);
+        getImgResults(`${location.pathname}?q=${searchTerm}&num=10`);
         // getImgResults(`${location.pathname}?q=suyashgaurav`);
+      }
+      if(location.pathname === '/videosearch'){
+        getVidResults(`${searchTerm}`);
       }
     }
   }, [searchTerm, location.pathname]);
@@ -91,6 +94,42 @@ export const Results = () => {
           </div>
         );
       }
+
+      case '/videosearch':  
+      if (results.length !== 0 && results.result) {
+        return (
+          <div className="sm:px-56 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 gap-4">
+            {results.result.map((result, index) => (    //items sent by api
+              <div key={index} className="flex flex-col mt-2 items-center p-4 border rounded-lg hover:shadow-lg transition-transform duration-300 hover:scale-105">
+                <a href={result.content} target="_blank" rel="noopener noreferrer">
+                  <img
+                    src={result.images.large}
+                    alt={result.title}
+                    className="h-48 w-full object-cover rounded-lg"
+                  />
+                </a>
+                <a href={result.content} target="_blank" rel="noopener noreferrer">
+                  <p className="text-sm dark:text-blue-300 text-blue-700 mt-2 hover:underline">
+                    {result.title.length > 50 ? result.title.substring(0, 50) + '...' : result.title}
+                  </p>
+                </a>
+              </div>
+            ))}
+          </div>
+        );        
+    } 
+    else {
+        return (
+          <div className="flex items-center justify-center mt-10 mr-10">
+            <div className="bg-red-500 text-white p-4 rounded-lg">
+              <p className="text-xl font-semibold">Oops, something went wrong!</p>
+              <p className="text-sm mt-2">Please try again later.</p>
+            </div>
+          </div>
+        );
+    }
+
+
     default:
       return (
         <div className="flex items-center justify-center h-screen">
